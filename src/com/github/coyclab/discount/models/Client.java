@@ -2,7 +2,7 @@ package com.github.coyclab.discount.models;
 
 import java.util.List;
 
-public class Client {
+public class Client extends AModel {
     private static Long nextID = 0L;
 
     private Long id;
@@ -117,17 +117,18 @@ public class Client {
         return builder.toString();
     }
 
-    public enum Discount{
+    public enum Discount {
         START(5),
         MEDIUM(7),
         VIP(10);
 
         public int value;
+
         Discount(int discount) {
             this.value = discount;
         }
 
-        public int getValue(){
+        public int getValue() {
             return value;
         }
 

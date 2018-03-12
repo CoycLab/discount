@@ -3,7 +3,7 @@ package com.github.coyclab.discount.models;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Purchase {
+public class Purchase extends AModel {
 
     private static Long nextID = 0L;
 

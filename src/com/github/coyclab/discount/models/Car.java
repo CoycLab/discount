@@ -1,11 +1,9 @@
 package com.github.coyclab.discount.models;
 
-import javafx.scene.input.DataFormat;
-
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Car {
+public class Car extends AModel {
     private static Long nextID = 0L;
 
     private Long id;
@@ -40,7 +38,7 @@ public class Car {
     }
 
 
-    public Long getId(){
+    public Long getId() {
         return id;
     }
 
@@ -106,7 +104,7 @@ public class Car {
         return builder.toString();
     }
 
-    public enum FuelType{
+    public enum FuelType {
         DIESEL("Дизель"),
         GASOLINE("Бензин"),
         LPG("Газ-Бензин");
